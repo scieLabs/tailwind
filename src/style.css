@@ -1,0 +1,7 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Just a reset, the rest should be via TailWind */
