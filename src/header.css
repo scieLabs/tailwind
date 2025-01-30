@@ -1,0 +1,26 @@
+header {
+  background-color: #ebf1ec;
+}
+
+.main-nav-links {
+  color: #000;
+}
+
+.hero-heading,
+.hero-description {
+  color: #539b93;
+}
+
+.hero-btn {
+  background-color: #539b93;
+  color: #fff;
+}
+
+nav,
+hero,
+.hero-img {
+  margin: 0 auto;
+}
+.hero-btn {
+  margin-bottom: 2rem;
+}
