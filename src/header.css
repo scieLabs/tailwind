@@ -15,12 +15,3 @@ header {
   background-color: #539b93;
   color: #fff;
 }
-
-nav,
-hero,
-.hero-img {
-  margin: 0 auto;
-}
-.hero-btn {
-  margin-bottom: 2rem;
-}
