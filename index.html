@@ -150,10 +150,10 @@
 
         </main>
 
-        <footer class="flex gap-3 bg-[#ebf1ec] w-screen text-[#539b93] px-4 py-15 lg:px-[20%] md:px-[20%] sm:px-[20%] lg:gap-15">
+        <footer class="flex flex-wrap lg:flex-nowrap md:flex-nowrap w-screen sm:flex-nowrap gap-3 bg-[#ebf1ec] text-[#539b93] px-4 py-15 lg:px-[20%] md:px-[10%] sm:px-[10%] lg:gap-15">
             <div id="footer-title">
                 <h6 class="font-extrabold tracking-wide capitalize ">Title here</h6>
-                <p class="text-xs/5 tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text-xs/5 tracking-wide md:break ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div id="footer-about">
                 <h6 class="font-extrabold tracking-wide capitalize ">About</h6>
@@ -177,32 +177,30 @@
             </div>
             <div id="footer-follow">
                 <h6 class="font-extrabold tracking-wide capitalize ">Follow</h6>
-                <div id="footer-media" class="flex ">
-                    <div id="footer-img">
-                        <div>
-                            <img src="./src/img/footer-fb.png" alt="facebook" width="20px"/>
-                        </div>
-                        <div>
-                            <img src="./src/img/footer-twitter.png" alt="twitter"/>
-                        </div>
-                        <div>
-                            <img src="./src/img/footer-insta.png" alt="instagram"/>
-                        </div>
-                        <div>
-                            <img src="./src/img/footer-WA.png" alt="whatsapp"/>
-                        </div>
-                    </div>
-                    <div id="footer-links" class="flex-col text-xs/5 tracking-wide ">
-                        <ul>
-                            <a href="https://www.facebook.com/">Facebook</a>
-                            <a href="https://x.com/">Twitter</a>
-                            <a href="https://www.instagram.com/">Instagram</a>
-                            <a href="https://www.whatsapp.com/">WhatsApp</a>
-                        </ul>
-
-                    </div>
+                <div id="footer-links" class="text-xs/5 tracking-wide">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" class="inline-flex">
+                                <img src="./src/img/footer-fb.png" alt="facebook" width="20px"/>
+                            Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/" class="inline-flex">
+                                <img src="./src/img/footer-twitter.png" alt="facebook" width="20px"/>
+                            Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" class="inline-flex">
+                                <img src="./src/img/footer-insta.png" alt="facebook" width="20px"/>
+                            Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.whatsapp.com/" class="inline-flex">
+                                <img src="./src/img/footer-WA.png" alt="facebook" width="20px"/>
+                            WhatsApp</a>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
             
         </footer>
