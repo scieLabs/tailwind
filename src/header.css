@@ -1,0 +1,17 @@
+header {
+  background-color: #ebf1ec;
+}
+
+.main-nav-links {
+  color: #000;
+}
+
+.hero-heading,
+.hero-description {
+  color: #539b93;
+}
+
+.hero-btn {
+  background-color: #539b93;
+  color: #fff;
+}
