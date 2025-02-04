@@ -1,52 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="https://unpkg.com/@tailwindcss/browser@4"></script> <!-- Not sure if it goes under or above the stylesheet, feel free to move it-->
-    </head>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/header.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
+    <!-- Not sure if it goes under or above the stylesheet, feel free to move it-->
+  </head>
 
-    <body>
-        <header>
-            <nav>
-                <!-- #navbar-->
+  <body>
+    <header id="header">
+      <!--Bleon-->
+      <nav class="flex items-center justify-between max-w-[90%] m-auto">
+        <!-- #navbar-->
+        <figure class="logo">
+          <img
+            src="./src/img/Logo.png"
+            alt=""
+            class="logo-img lg:w-auto sm:w-25 max-sm:w-20"
+          />
+        </figure>
 
-            </nav>
-            <hero>
-                <!-- #yoga-class hero section-->
+        <ul class="main-nav-ul lg:flex gap-20 sm:hidden max-sm:hidden">
+          <li class="main-nav-li">
+            <a href="#" class="main-nav-links font-bold">HOME</a>
+          </li>
+          <li class="main-nav-li">
+            <a href="#" class="main-nav-links font-bold">ABOUT US</a>
+          </li>
+          <li class="main-nav-li">
+            <a href="#" class="main-nav-links font-bold">SERVICES</a>
+          </li>
+          <li class="main-nav-li">
+            <a href="#" class="main-nav-links font-bold">CONTACT US</a>
+          </li>
+        </ul>
 
-            </hero>
-        </header>
+        <ion-icon
+          name="menu-outline"
+          class="burger-menu lg:hidden sm:block sm:text-6xl max-sm:text-4xl"
+        ></ion-icon>
+      </nav>
 
-        <main>
-            <section>
-                <!-- #choose-class section1 -->
-            </section>
+      <hero
+        class="flex items-center justify-between lg:flex-row max-w-[90%] lg:gap-20 sm:flex-col max-sm:flex-col m-auto"
+      >
+        <!-- #yoga-class hero section-->
+        <figure class="hero-figure">
+          <img
+            src="./src/img/header-img.png "
+            alt=""
+            class="hero-img lg:w-[100%] sm:w-[60%] m-auto"
+          />
+        </figure>
+        <div
+          class="hero-info-box flex justify-center items-center flex-col text-center gap-10"
+        >
+          <h1
+            class="hero-heading xl:text-6xl font-bold lg:text-5xl sm:text-4xl max-sm:text-3xl"
+          >
+            YOGA CLASS
+          </h1>
+          <p
+            class="hero-description xl:max-w-[57ch] lg:max-w-[70ch] sm:max-w-[40ch] max-sm:max-w-[35ch]"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+            architecto quis aut iste autem doloremque, ex magni saepe. Adipisci,
+            tempora! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Hic, labore.
+          </p>
+          <button
+            class="hero-btn border rounded-xl lg:w-1/3 lg:h-8 sm:w-1/2 sm:h-8 max-sm:w-1/2 max-sm:h-8 mb-2"
+          >
+            JOIN NOW
+          </button>
+        </div>
+      </hero>
+    </header>
+    <main>
+      <section
+        id="choose-clas"
+        class="bg-[#539b93] text-[#ebf1ec] text-center tracking-wide px-4 py-15"
+      >
+        <div class="pb-8 flex flex-col lg:px-[30%] md:px-[20%] sm:px-[20%]">
+          <h2 class="font-extrabold uppercase pb-4 text-2xl/5">Choose class</h2>
+          <p class="text-md/5 tracking-wide">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            ipsam veniam quia saepe magni ad, numquam expedita ut esse. Minus
+            quia qui quas magnam. Sed enim incidunt dolores vero temporibus?
+          </p>
+        </div>
+        <div
+          class="flex justify-around gap-2 lg:px-[20%] lg:gap-10 md:px-[20%] sm:px-[20%]"
+          id="choose-class-flex"
+        >
+          <div id="choose-class-newbie">
+            <div class="xs:h-10">
+              <img src="./src/img/section1-newbie.png" alt="newbie class" />
+            </div>
+            <div class="flex-col justify-between">
+              <h4 class="font-extrabold uppercase pb-1b text-sm/5">
+                Newbie class
+              </h4>
+              <p class="text-xs/5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div id="choose-class-advanced">
+            <div class="xs:h-10">
+              <img src="./src/img/section1-advanced.png" alt="advanced class" />
+            </div>
+            <div>
+              <h4 class="font-extrabold uppercase pb-1 text-sm/5">
+                Advanced class
+              </h4>
+              <p class="text-xs/5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div id="choose-class-expert">
+            <div class="xs:h-10">
+              <img src="./src/img/section1-expert.png" alt="expert class" />
+            </div>
+            <div>
+              <h4 class="font-extrabold uppercase pb-1 text-sm/5">
+                Expert class
+              </h4>
+              <p class="text-xs/5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section>
-                <!-- #our-stats section2 -->
-            </section>
+      <section
+        class="relative bg-[url('/src/img/stats-bgimage.jpg')] bg-cover bg-top bg-no-repeat"
+      >
+        <!-- Bleon-->
+        <!-- #our-stats section2 -->
+        <div class="absolute inset-0 bg-white opacity-80"></div>
+        <div
+          class="relative z-10 stats-heading max-sm:flex max-sm:flex-col place-items-center justify-center max-sm:mb-5 max-sm:gap-5 sm:mb-10"
+        >
+          <h2
+            class="text-center max-sm:mt-5 font-bold max-sm:text-xl text-center sm:pt-10 sm:text-3xl xl:text-5xl"
+          >
+            OUR STATS
+          </h2>
+          <p
+            class="max-sm:max-w-[50ch] text-center max-sm:text-sm sm:pt-5 xl:max-w-[90ch] xl:mb-20 xl:mt-10"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit,
+            laborum incidunt quos nemo, autem facere reiciendis, voluptate
+            consequuntur.Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Sit, laborum incidunt quos nemo, autem facere reiciendis,
+            voluptate consequuntur.
+          </p>
+        </div>
 
-            <section>
-                <!-- #pricing section3 -->
-            </section>
+        <!-- Image Boxes -->
+        <div
+          class="relative z-10 images-big-box flex max-sm:flex-col max-sm:gap-5 max-sm:justify-center max-sm:items-center sm:flex-row sm:justify-center sm:items-center sm:flex-wrap sm:gap-10 lg:justify-around lg:gap-5 xl:justify-evenly sm:pb-10 pb-10"
+        >
+          <div
+            class="stats-box rounded-full border-2 flex flex-col max-sm:items-center sm:items-center sm:h-65 sm:w-65 h-60 w-60 gap-10 lg:w-80 lg:h-80 justify-center xl:w-90 xl:h-90"
+          >
+            <h3
+              class="font-bold max-sm:text-lg text-center sm:text-xl lg:text-1xl max-w-[10ch] xl:text-2xl"
+            >
+              5000+ <br />Happy Clients
+            </h3>
+            <p
+              class="text-center max-sm:max-w-[20ch] max-sm:text-sm xl:max-w-[30ch]"
+            >
+              We have successfully served over 5,000 clients with exceptional
+              solutions and service.
+            </p>
+          </div>
+          <div
+            class="stats-box rounded-full border-2 flex flex-col max-sm:items-center sm:items-center sm:h-65 sm:w-65 h-60 w-60 gap-10 lg:w-80 lg:h-80 justify-center xl:w-90 xl:h-90"
+          >
+            <h3
+              class="font-bold max-sm:text-lg text-center sm:text-xl lg:text-1xl xl:text-2xl"
+            >
+              Award <br />
+              Winning !
+            </h3>
+            <p
+              class="text-center max-sm:max-w-[20ch] max-sm:text-sm sm:max-w-[20ch] xl:max-w-[30ch]"
+            >
+              Recognized as the Best Yoga Training Camp winner five times for
+              excellence and innovation.
+            </p>
+          </div>
+          <div
+            class="stats-box rounded-full border-2 flex flex-col max-sm:items-center sm:items-center sm:h-65 sm:w-65 h-60 w-60 gap-10 lg:w-80 lg:h-80 justify-center xl:w-90 xl:h-90"
+          >
+            <h3
+              class="font-bold max-sm:text-lg text-center sm:text-xl lg:text-1xl xl:text-2xl"
+            >
+              500+ <br />
+              Groups
+            </h3>
+            <p
+              class="text-center max-sm:max-w-[20ch] max-sm:text-sm xl:max-w-[30ch]"
+            >
+              Hosted over 500 groups, providing exceptional experiences and
+              top-quality service.
+            </p>
+          </div>
+        </div>
 
-            <section>
-                <!-- #quote section4 -->
-            </section>
+        <h2></h2>
+      </section>
 
-            <section>
-                <!-- #subscribe section5 -->
-            </section>
+      <section
+        class="pricing bg-[#539b93] text-center tracking-wide px-4 py-15"
+      >
+        <!--Vegtam-->
+        <!-- #pricing section3 -->
+        <div
+          class="pricing-info-box text-[#ebf1ec] flex justify-center items-center text-center flex-col lg:px-[30%] md:px-[20%] sm:px-[20%]"
+        >
+          <h2
+            class="font-extrabold uppercase pb-4 text-2xl/5 flex justify-center p-1 tracking-wide capitalize"
+          >
+            PRICING
+          </h2>
+          <p class="text-md/5 tracking-wide">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+            nesciunt mollitia recusandae iure ex sequi, modi facilis a repellat,
+            quod doloremque! Quam dolore explicabo hic sequi asperiores tempore
+            id. Autem.
+          </p>
+        </div>
 
-        </main>
+        <div
+          class="flex justify-center items-center text-center gap-10 max-sm:flex-col"
+        >
+          <div
+            class="class-sign-up-box flex flex-col bg-[#ebf1ec] text-[#539b93] wd-1/3 mx-4 m-2 rounded"
+          >
+            <h3 class="font-bold tracking-wide capitalize max-md:text-sm">NEWBIE CLASS</h3>
 
-        <footer>
-            <!-- #footer -->
-        </footer>
-    
-    </body>
+            <img
+              src="./src/img/Logo.png"
+              alt=""
+              class="class-logo object-contain h-32 self-center lg:w-auto sm:w-25 max-sm:w-20"
+            />
+
+            <p class="text-sm p-1 max-md:text-xs">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+
+            <button
+              class="newbie-offer-btn max-md:text-sm bg-[#539b93] text-[#ebf1ec] self-center border rounded-xl lg:w-1/3 lg:h-8 sm:w-1/2 sm:h-8 max-sm:w-1/2 max-sm:h-8 mb-2"
+            >
+              SIGN UP!
+            </button>
+          </div>
+
+          <div
+            class="class-sign-up-box flex flex-col bg-[#ebf1ec] text-[#539b93] wd-1/3 mx-4 m-2 rounded"
+          >
+            <h3 class="font-bold tracking-wide capitalize  max-md:text-sm">ADVANCED CLASS</h3>
+
+            <img
+              src="./src/img/Logo.png"
+              alt=""
+              class="class-logo object-contain h-32 self-center lg:w-auto sm:w-25 max-sm:w-20"
+            />
+
+            <p class="text-sm p-1 max-md:text-xs">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+
+            <button
+              class="advanced-offer-btn max-md:text-sm bg-[#539b93] text-[#ebf1ec] self-center border rounded-xl lg:w-1/3 lg:h-8 sm:w-1/2 sm:h-8 max-sm:w-1/2 max-sm:h-8 mb-2"
+            >
+              SIGN UP!
+            </button>
+          </div>
+
+          <div
+            class="class-sign-up-box flex flex-col bg-[#ebf1ec] text-[#539b93] wd-1/3 mx-4 m-2 rounded"
+          >
+            <h3 class="font-bold tracking-wide capitalize max-md:text-sm">EXPERT CLASS</h3>
+
+            <img
+              src="./src/img/Logo.png"
+              alt=""
+              class="class-logo object-contain h-32 self-center lg:w-auto sm:w-25 max-sm:w-20"
+            />
+
+            <p class="text-sm p-1 max-md:text-xs">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+
+            <button
+              class="expert-offer-btn max-md:text-sm bg-[#539b93] text-[#ebf1ec] self-center border rounded-xl lg:w-1/3 lg:h-8 sm:w-1/2 sm:h-8 max-sm:w-1/2 max-sm:h-8 mb-2"
+            >
+              SIGN UP!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="relative bg-[url('/src/img/quotes-bg.jpg')] bg-cover max-sm:bg-center bg-center bg-no-repeat sm:bg-center"
+      >
+        <!--Bleon-->
+        <!-- #quote section4 -->
+        <div class="absolute inset-0 bg-white opacity-80"></div>
+        <div
+          class="relative z-10 quotes-heading max-sm:flex max-sm:flex-col place-items-center justify-center max-sm:pb-5 max-sm:pt-5 max-sm:gap-5 sm:pb-10 sm:pt-10"
+        >
+          <img
+            src="./src/img/quotes-img.png"
+            alt="Quotes-img"
+            class="sm:w-1/ lg:w-1/4"
+          />
+
+          <p
+            class="max-sm:max-w-[50ch] text-center max-sm:text-sm sm:pt-5 xl:max-w-[60ch] sm:max-w-[50ch] xl:mb-20 xl:mt-10 lg:text-3xl sm:text-xl"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit,
+            laborum incidunt quos nemo, autem facere reiciendis, voluptate
+            consequuntur.Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Sit, laborum incidunt quos nemo, autem facere reiciendis,
+            voluptate consequuntur.
+          </p>
+          <h2
+            class="text-center max-sm:mt-5 font-bold max-sm:text-xl text-center sm:text-3xl xl:text-5xl"
+          >
+            TRAINER DEVANDA
+          </h2>
+        </div>
+        <h3></h3>
+      </section>
+
+      <section
+        class="subscribe-section bg-[#539b93] text-[#ebf1ec] flex flex-col text-center tracking-wide px-4 py-15"
+      >
+        <!--Vegtam-->
+        <!-- #subscribe section5 -->
+        <div
+          class="flex justify-center items-center flex-col text-center lg:px-[30%] md:px-[20%] sm:px-[20%]"
+        >
+          <h2
+            class="font-extrabold uppercase pb-4 text-2xl/5 flex justify-center p-1 tracking-wide capitalize"
+          >
+            DON'T MISS ANY UPDATES
+          </h2>
+          <p class="pb-6 tracking-wide text-md/5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            nihil dicta, alias odio quam facilis eos quod reprehenderit non
+            temporibus harum atque explicabo iste ipsam ipsum quidem iure
+            possimus quis.
+          </p>
+          <div
+            class="mx-auto flex flex-col items-center justify-between gap-6 sm:flex-row max-w-screen-lg"
+          >
+            <div
+              class="w-full xl:max-w-[57ch] lg:max-w-[70ch] sm:max-w-[40ch] max-sm:max-w-[35ch]"
+            >
+              <form class="flex rounded-full bg-[#ebf1ec] px-4 py-2">
+                <input
+                  class="w-full appearance-none bg-[#ebf1ec] text-[#539b93] focus:outline-none"
+                />
+                <button
+                  class="ml-2 rounded-full bg-[#539b93] px-3 py-1 text-sm font-medium"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="flex flex-wrap lg:flex-nowrap md:flex-nowrap w-screen sm:flex-nowrap gap-3 bg-[#ebf1ec] text-[#539b93] px-4 py-15 lg:px-[20%] md:px-[10%] sm:px-[10%] lg:gap-15"
+    >
+      <div id="footer-title">
+        <h6 class="font-extrabold tracking-wide capitalize">Title here</h6>
+        <p class="text-xs/5 tracking-wide md:break">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div id="footer-about">
+        <h6 class="font-extrabold tracking-wide capitalize">About</h6>
+        <ul class="text-xs/5 tracking-wide">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Brand Guidelines</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div id="footer-services">
+        <h6 class="font-extrabold tracking-wide capitalize">Services</h6>
+        <ul class="text-xs/5 tracking-wide">
+          <li>How to Order</li>
+          <li>Our Product</li>
+          <li>Order Status</li>
+          <li>Promo</li>
+          <li>Payment Method</li>
+        </ul>
+      </div>
+      <div id="footer-follow">
+        <h6 class="font-extrabold tracking-wide capitalize">Follow</h6>
+        <div id="footer-links" class="text-xs/5 tracking-wide">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" class="inline-flex">
+                <img
+                  src="./src/img/footer-fb.png"
+                  alt="facebook"
+                  width="20px"
+                />
+                Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://x.com/" class="inline-flex">
+                <img
+                  src="./src/img/footer-twitter.png"
+                  alt="facebook"
+                  width="20px"
+                />
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" class="inline-flex">
+                <img
+                  src="./src/img/footer-insta.png"
+                  alt="facebook"
+                  width="20px"
+                />
+                Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.whatsapp.com/" class="inline-flex">
+                <img
+                  src="./src/img/footer-WA.png"
+                  alt="facebook"
+                  width="20px"
+                />
+                WhatsApp</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
