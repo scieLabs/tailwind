@@ -1,17 +1,4 @@
 .DS_Store
 
 
-y
-
-git add .gitignore
-git commit -m "Add .gitignore to ignore .DS_Store"
-git push
-
-
-y
-
-
-
-
-y≈y
 
